@@ -2,8 +2,8 @@
 def bubble(input_list):
     for e in range(0, len(input_list)):
 
-        for i in range(0, len(input_list)):
-            if i < len(input_list) - 1 and input_list[i + 1] < input_list[i]:
+        for i in range(0, len(input_list) - e):
+            if e != 0 and input_list[i + 1] < input_list[i]:
                 storage_var = input_list[i + 1]
                 input_list[i+1] = input_list[i]
                 input_list[i] = storage_var
